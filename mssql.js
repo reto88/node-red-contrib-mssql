@@ -10,9 +10,10 @@ module.exports = function(RED) {
 	    this.config = {
             user: node.credentials.username,
             password: node.credentials.password,
-						domain: node.credentials.domain,
+	    domain: node.credentials.domain,
             server: config.server,
             database: config.database,
+	    requestTimeout: config.requestTimeout,	
             options: {
                            encrypt : config.encyption,
                            useUTC: config.useUTC
